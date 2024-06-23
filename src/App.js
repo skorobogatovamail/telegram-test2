@@ -7,11 +7,12 @@ function App() {
   const { tg, onToggleButton } = useTelegram();
   useEffect(() => {
     tg.ready();
-  });
+  }, []);
 
   return (
     <div className="App">
       <Header />
+      <Route
       <button onClick={onToggleButton}></button>{" "}
     </div>
   );
